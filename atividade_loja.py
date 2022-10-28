@@ -28,14 +28,3 @@ print("Valor da parcela dividido em 3x sem juros: R$", totalgeral/3)
 print("Valor da parcela divido em 6x com juros de 5%: R$", (((totalgeral/100)*5)+totalgeral)/6)
 # E um valor com 10% de desconto para pagamento à vista.
 print("O valor com desconto de 10% à vista: R$", (totalgeral-(totalgeral/100)*10))
-
-
-
-
-
-
-
-
-
-
-
