@@ -4,20 +4,30 @@
 #E depois o total informado se o aluno foi aprovado,
 #esta em recuperação ou foi reprovado sem recuperação.
 
-print("Notas Escola!")
+print("Notas Ensino Médio!")
 
-nota1 = float(input("Digite a nota do Primeiro Bimestre do aluno (0 à 25): "))
-nota2 = float(input("Digite a nota do Segundo Bimestre do aluno (0 à 25): "))
-nota3 = float(input("Digite a nota do Terceiro Bimestre do aluno (0 à 25): "))
-nota4 = float(input("Digite a nota do Quarto Bimestre do aluno (0 à 25): "))
+nota1p = float(input("Digite a nota da Primeira Prova: "))
+nota1t = float(input("Digite a nota do Primeiro Trabalho: "))
+resultado1b = nota1t + nota1t
+print("A nota obtida pelo aluno no Primeiro Bimestre foi: ", resultado1b)
 
-resultado = nota1 + nota2 + nota3 + nota4
+nota2p = float(input("Digite a nota da Segunda Prova: "))
+nota2t = float(input("Digite a nota do Segundo Trabalho: "))
+resultado2b = nota2t + nota2t
+print("A nota obtida pelo aluno no Primeiro Bimestre foi: ", resultado2b)
 
-print("A nota obtida pelo aluno durante o ano foi (0 à 100): ", resultado)
+nota3p = float(input("Digite a nota da Terceira Prova: "))
+nota3t = float(input("Digite a nota do Terceiro Trabalho: "))
+resultado3b = nota3t + nota3t
+print("A nota obtida pelo aluno no Primeiro Bimestre foi: ", resultado3b)
 
-if (resultado >= 60):
-    print ("O aluno está Aprovado!")
-elif (resultado < 40):
-    print("O aluno está Reprovado!")
-elif (resultado < 60 or resultado >= 40):
-    print ("O aluno está de Recuperação!")
+nota4p = float(input("Digite a nota da Quarta Prova: "))
+nota4t = float(input("Digite a nota do Quarto Trabalho: "))
+resultado4b = nota4t + nota4t
+print("A nota obtida pelo aluno no Primeiro Bimestre foi: ", resultado4b)
+
+resultadofinal = resultado1b + resultado2b + resultado3b + resultado4b
+
+print ( "O resultado final obtido pelo aluno foi: " , resultadofinal )
+
+#CÓDIGO EM ANDAMENTO...
