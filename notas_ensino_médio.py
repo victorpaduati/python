@@ -1,8 +1,8 @@
-#Crie um programa para calcular as notas obtidas pelo aluno do
-#ensino médio, deverá mostrar mensagem para ser digitado a
-#nota do 1º, 2º, 3º e 4º bimestre. Após deverá mostrar na tela se o aluno foi aprovado,
-#se está em recuperação ou foi reprovado sem chance de recuperação.
-#Lembrando que cada bimestre vale 25 pontos num total anual de 100 pontos.
+#Crie um programa para calcular as notas obtidas pelo aluno do ensino médio,
+#deverá mostrar mensagem para ser digitado a nota da 1ª, 2ª, 3ª e 4ª prova e a nota do 1º, 2º, 3º e 4º trabalho.
+#Após deverá mostrar na tela a média obtida no 1º, 2º, 3º e 4º bimestre
+#E depois o total informado se o aluno foi aprovado,
+#esta em recuperação ou foi reprovado sem recuperação.
 
 print("Notas Escola!")
 
@@ -21,5 +21,3 @@ elif (resultado < 40):
     print("O aluno está Reprovado!")
 elif (resultado < 60 or resultado >= 40):
     print ("O aluno está de Recuperação!")
-
-
