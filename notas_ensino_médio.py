@@ -4,30 +4,36 @@
 #E depois o total informado se o aluno foi aprovado,
 #esta em recuperação ou foi reprovado sem recuperação.
 
-print("Notas Ensino Médio!")
+print("Programa para calcular notas bimestrais!")
 
-nota1p = float(input("Digite a nota da Primeira Prova: "))
-nota1t = float(input("Digite a nota do Primeiro Trabalho: "))
-resultado1b = nota1t + nota1t
-print("A nota obtida pelo aluno no Primeiro Bimestre foi: ", resultado1b)
+p1 = float(input("Digite a nota da prova no Primeiro Bimestre: "))
+p2 = float(input("Digite a nota da prova no Segundo Bimestre): "))
+p3 = float(input("Digite a nota da prova no Terceiro Bimestre: "))
+p4 = float(input("Digite a nota da prova no Quarto Bimestre: "))
 
-nota2p = float(input("Digite a nota da Segunda Prova: "))
-nota2t = float(input("Digite a nota do Segundo Trabalho: "))
-resultado2b = nota2t + nota2t
-print("A nota obtida pelo aluno no Primeiro Bimestre foi: ", resultado2b)
+t1 = float(input("Digite a nota do trabalho no Primeiro Bimestre: "))
+t2 = float(input("Digite a nota do trabalho no Segundo Bimestre: "))
+t3 = float(input("Digite a nota do trabalho no Terceiro Bimestre: "))
+t4 = float(input("Digite a nota do trabalho no Quarto Bimestre: "))
 
-nota3p = float(input("Digite a nota da Terceira Prova: "))
-nota3t = float(input("Digite a nota do Terceiro Trabalho: "))
-resultado3b = nota3t + nota3t
-print("A nota obtida pelo aluno no Primeiro Bimestre foi: ", resultado3b)
+b1 = (p1+t1)/2
+b2 = (p2+t2)/2
+b3 = (p3+t3)/2
+b4 = (p4+t4)/2
 
-nota4p = float(input("Digite a nota da Quarta Prova: "))
-nota4t = float(input("Digite a nota do Quarto Trabalho: "))
-resultado4b = nota4t + nota4t
-print("A nota obtida pelo aluno no Primeiro Bimestre foi: ", resultado4b)
+print("A nota do Primeiro Bimestre é:", b1)
+print("A nota do Segundo Bimestre é:", b2)
+print("A nota do Terceiro Bimestre é:", b3)
+print("A nota do Quarto Bimestre é:", b4)
 
-resultadofinal = resultado1b + resultado2b + resultado3b + resultado4b
+resultado = b1 + b2 + b3 + b4
+print ("O resultado final do aluno foi: ", resultado)
 
-print ( "O resultado final obtido pelo aluno foi: " , resultadofinal )
-
-#CÓDIGO EM ANDAMENTO...
+if (resultado >= 60 and resultado <= 100):
+    print ("O aluno está Aprovado!")
+elif (resultado >= 40 and resultado < 60):
+    print("O aluno está em Recuperação!")
+elif (resultado < 40 and resultado >= 0):
+    print ("O aluno está Reprovado!")
+else:
+    print("Confirme os valores digitados, valor inválido!")
