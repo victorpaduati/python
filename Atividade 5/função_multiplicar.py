@@ -4,7 +4,7 @@
 print("Algoritmo para Multiplicação")
 
 nx = float(input("Digite os números a serem multiplicados: "))
-ny = float(input(": "))
+ny = float(input("* "))
 
 def multiplica(n1,n2):
     resultado=n1*n2

@@ -18,3 +18,4 @@ for i in range(10):
         contador=contador+1
 
 print("o número total de consoantes é", contador)
+
