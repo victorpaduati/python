@@ -3,13 +3,19 @@
 #ordenação crescente usando uma função para facilitar a localização
 #do nome na lista que será afixada no quadro de avisos da escola.
 
-print("Programa Nomes Inscritos no ENEM!")
+def ordenacao(vetor):
+    for i in range(len(vetor)):
+        for j in range(i+1,len(vetor)):
+            if vetor [i] > vetor[j]:
+                x = vetor[i]
+                vetor [i] = vetor [j]
+                vetor [j] = x
 
-lista_nomes= [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    return vetor
 
-for i in range(20):
-    lista_nomes[i]=str(input("digite o nome do aluno: "))
+vetor = []
+for i in range (20):
+    vetor.append(input("Digite um nome do aluno do Enem: ").capitalize())
 
-sorted(str(lista_nomes))
-
-print(sorted(lista_nomes))
+vetorOrdenacao = ordenacao(vetor)
+print(vetorOrdenacao)
