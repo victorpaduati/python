@@ -19,3 +19,4 @@ print("Desconto INSS: ", round(inss, 2))
 print("Desconto Imposto de Renda: ", round(ir, 2))
 print("Desconto Sindicato: ", round(sindicato, 2))
 print("Seu salário líquido é: ", round(salarioLiquido, 2))
+
